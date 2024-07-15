@@ -1,0 +1,188 @@
+ [LOGGER] 2024-07-14 09:28:09.038 AM error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controller/product.controller.ts[0m:[93m3[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find module '../services/produk.services' or its corresponding type declarations.
+
+[7m3[0m import { getproduct } from "../services/produk.services";
+[7m [0m [91m                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controller/product.controller.ts[0m:[93m3[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find module '../services/produk.services' or its corresponding type declarations.
+
+[7m3[0m import { getproduct } from "../services/produk.services";
+[7m [0m [91m                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+ [LOGGER] 2024-07-14 09:30:43.814 AM error : uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\laragon\www\latihan_express2\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\laragon\www\latihan_express2\src\index.ts:10:5)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+ [LOGGER] 2024-07-14 09:31:46.029 AM error : uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\laragon\www\latihan_express2\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\laragon\www\latihan_express2\src\index.ts:10:5)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+ [LOGGER] 2024-07-14 09:39:27.575 AM error : uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\laragon\www\latihan_express2\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\laragon\www\latihan_express2\src\index.ts:10:5)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+ [LOGGER] 2024-07-14 11:24:55.050 AM error : uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\laragon\www\latihan_express2\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\laragon\www\latihan_express2\src\index.ts:10:5)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+ [LOGGER] 2024-07-14 11:25:49.988 AM error : uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\laragon\www\latihan_express2\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\laragon\www\latihan_express2\src\index.ts:10:5)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+ [LOGGER] 2024-07-14 11:29:25.635 AM error : uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\laragon\www\latihan_express2\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\laragon\www\latihan_express2\src\index.ts:10:5)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+ [LOGGER] 2024-07-14 11:30:31.579 AM error : uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\laragon\www\latihan_express2\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\laragon\www\latihan_express2\src\index.ts:10:5)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+ [LOGGER] 2024-07-14 11:38:05.718 AM error : uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\laragon\www\latihan_express2\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\laragon\www\latihan_express2\src\index.ts:10:5)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+ [LOGGER] 2024-07-14 11:39:19.834 AM error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/product.route.ts[0m:[93m2[0m:[93m25[0m - [91merror[0m[90m TS2305: [0mModule '"../controller/product.controller"' has no exported member 'insertDataProduct'.
+
+[7m2[0m import { getAllProduct, insertDataProduct } from "../controller/product.controller";
+[7m [0m [91m                        ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/product.route.ts[0m:[93m2[0m:[93m25[0m - [91merror[0m[90m TS2305: [0mModule '"../controller/product.controller"' has no exported member 'insertDataProduct'.
+
+[7m2[0m import { getAllProduct, insertDataProduct } from "../controller/product.controller";
+[7m [0m [91m                        ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+ [LOGGER] 2024-07-14 11:41:19.407 AM error : uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\laragon\www\latihan_express2\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\laragon\www\latihan_express2\src\index.ts:10:5)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+ [LOGGER] 2024-07-14 11:42:34.139 AM error : uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\laragon\www\latihan_express2\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\laragon\www\latihan_express2\src\index.ts:10:5)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+ [LOGGER] 2024-07-14 11:45:01.803 AM error : uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\laragon\www\latihan_express2\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\laragon\www\latihan_express2\src\index.ts:10:5)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+ [LOGGER] 2024-07-14 11:46:36.274 AM error : uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\laragon\www\latihan_express2\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\laragon\www\latihan_express2\src\index.ts:10:5)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)

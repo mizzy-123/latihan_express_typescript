@@ -1,31 +1,17 @@
-import { type Request, type Response, Router } from "express";
-import { inputProductValidation } from "../validations/product.validation";
+import { Router } from "express";
+import { deleteDataProduct, getAllProduct, getDataProductById, insertDataProduct, updateDataProduct } from "../controller/product.controller";
+import expressAsyncHandler from "express-async-handler";
 
 const productRouter = Router();
 
-productRouter.get("/product", (req: Request, res: Response) => {
-  res.status(200).json({ message: "Hello World" });
-});
+productRouter.get("/product", expressAsyncHandler(getAllProduct));
 
-productRouter.post("/product", (req: Request, res: Response) => {
-  const { error, value } = inputProductValidation(req.body);
-  if (error != null) {
-    const errorMessages = error.details.map((detail) => ({
-      field: detail.context?.key,
-      message: detail.message,
-    }));
-    return res.status(400).json({
-      error: errorMessages,
-      message: "Input data failed",
-      data: value,
-    });
-  }
+productRouter.get("/product/:id", expressAsyncHandler(getDataProductById));
 
-  return res.status(200).json({
-    error: null,
-    message: "Input data sukses",
-    data: value,
-  });
-});
+productRouter.post("/product", expressAsyncHandler(insertDataProduct));
+
+productRouter.put("/product/:id", expressAsyncHandler(updateDataProduct));
+
+productRouter.delete("/product/:id", expressAsyncHandler(deleteDataProduct));
 
 export default productRouter;
