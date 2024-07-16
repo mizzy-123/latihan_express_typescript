@@ -1,0 +1,26 @@
+ [LOGGER] 2024-07-16 03:23:43.829 PM error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/produk.services.ts[0m:[93m12[0m:[93m3[0m - [91merror[0m[90m TS2322: [0mType '{ id: number; nama: string; jumlah: number; harga: Decimal; created_at: Date; updated_at: Date; } | null' is not assignable to type '{ id: number; nama: string; jumlah: number; harga: Decimal; created_at: Date; updated_at: Date; }'.
+  Type 'null' is not assignable to type '{ id: number; nama: string; jumlah: number; harga: Decimal; created_at: Date; updated_at: Date; }'.
+
+[7m12[0m   return data;
+[7m  [0m [91m  ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/produk.services.ts[0m:[93m12[0m:[93m3[0m - [91merror[0m[90m TS2322: [0mType '{ id: number; nama: string; jumlah: number; harga: Decimal; created_at: Date; updated_at: Date; } | null' is not assignable to type '{ id: number; nama: string; jumlah: number; harga: Decimal; created_at: Date; updated_at: Date; }'.
+  Type 'null' is not assignable to type '{ id: number; nama: string; jumlah: number; harga: Decimal; created_at: Date; updated_at: Date; }'.
+
+[7m12[0m   return data;
+[7m  [0m [91m  ~~~~~~[0m
+
+    at createTSError (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+ [LOGGER] 2024-07-16 03:51:31.669 PM error : Cannot set headers after they are sent to the client
+ [LOGGER] 2024-07-16 06:42:02.691 PM error : Cannot set headers after they are sent to the client

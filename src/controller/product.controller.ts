@@ -2,7 +2,7 @@ import { type NextFunction, type Request, type Response } from "express";
 import { inputProductValidation } from "../validations/product.validation";
 import { deleteProduct, getproduct, getProductById, insertProduct, updateProduct } from "../services/produk.services";
 
-export const getAllProduct = async (req: Request, res: Response, next: NextFunction): Promise<any> => {
+export const getAllProduct = async (req: Request, res: Response, next: NextFunction): Promise<Response | unknown> => {
   try {
     const data = await getproduct();
 
@@ -11,12 +11,12 @@ export const getAllProduct = async (req: Request, res: Response, next: NextFunct
       message: "Pengambilan semua data berhasil",
       data: data,
     });
-  } catch (error: Error | any) {
-    next(new Error("Error pada file product.controller.ts : " + error.message));
+  } catch (error: Error | unknown) {
+    next(new Error("Error pada file src/controllers/product.controller.ts : getAllProduct - " + String((error as Error).message)));
   }
 };
 
-export const getDataProductById = async (req: Request, res: Response, next: NextFunction): Promise<any> => {
+export const getDataProductById = async (req: Request, res: Response, next: NextFunction): Promise<Response | unknown> => {
   try {
     const { id } = req.params;
     const data = await getProductById(parseInt(id));
@@ -25,12 +25,12 @@ export const getDataProductById = async (req: Request, res: Response, next: Next
       message: "Pengambilan data berhasil",
       data: data,
     });
-  } catch (error: Error | any) {
-    next(new Error("Error pada file product.controller.ts : " + error.message));
+  } catch (error: Error | unknown) {
+    next(new Error("Error pada file src/controllers/product.controller.ts : getDataProductById - " + String((error as Error).message)));
   }
 };
 
-export const insertDataProduct = async (req: Request, res: Response, next: NextFunction): Promise<any> => {
+export const insertDataProduct = async (req: Request, res: Response, next: NextFunction): Promise<Response | unknown> => {
   try {
     const { error, value } = inputProductValidation(req.body);
     if (error != null) {
@@ -51,12 +51,12 @@ export const insertDataProduct = async (req: Request, res: Response, next: NextF
       message: "Insert Data sukses",
       data: product,
     });
-  } catch (error: Error | any) {
-    next(new Error("Error pada file product.controller.ts : " + error.message));
+  } catch (error: Error | unknown) {
+    next(new Error("Error pada file src/controllers/product.controller.ts : inertDataProduct - " + String((error as Error).message)));
   }
 };
 
-export const updateDataProduct = async (req: Request, res: Response, next: NextFunction): Promise<any> => {
+export const updateDataProduct = async (req: Request, res: Response, next: NextFunction): Promise<Response | unknown> => {
   try {
     const { id } = req.params;
     const { error, value } = inputProductValidation(req.body);
@@ -78,12 +78,12 @@ export const updateDataProduct = async (req: Request, res: Response, next: NextF
       message: "Update product success",
       data: data,
     });
-  } catch (error: Error | any) {
-    next(new Error("Error pada file product.controller.ts : " + error.message));
+  } catch (error: Error | unknown) {
+    next(new Error("Error pada file src/controllers/product.controller.ts : updateDataProduct - " + String((error as Error).message)));
   }
 };
 
-export const deleteDataProduct = async (req: Request, res: Response, next: NextFunction): Promise<any> => {
+export const deleteDataProduct = async (req: Request, res: Response, next: NextFunction): Promise<Response | unknown> => {
   try {
     const { id } = req.params;
     const data = await deleteProduct(parseInt(id));
@@ -92,7 +92,7 @@ export const deleteDataProduct = async (req: Request, res: Response, next: NextF
       message: "Delete data sukses",
       data,
     });
-  } catch (error) {
+  } catch (error: Error | unknown) {
     next(new Error("Error pada file src/controllers/product.controller.ts : deleteDataProduct - " + String((error as Error).message)));
   }
 };

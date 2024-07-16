@@ -1,0 +1,293 @@
+ [LOGGER] 2024-07-15 03:25:07.773 PM error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/product.route.ts[0m:[93m7[0m:[93m51[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m productRouter.get("/product", expressAsyncHandler(getAllProduct));
+[7m [0m [91m                                                  ~~~~~~~~~~~~~[0m
+[96msrc/routes/product.route.ts[0m:[93m9[0m:[93m55[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m9[0m productRouter.get("/product/:id", expressAsyncHandler(getDataProductById));
+[7m [0m [91m                                                      ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/product.route.ts[0m:[93m11[0m:[93m52[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m11[0m productRouter.post("/product", expressAsyncHandler(insertDataProduct));
+[7m  [0m [91m                                                   ~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/product.route.ts[0m:[93m13[0m:[93m55[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m13[0m productRouter.put("/product/:id", expressAsyncHandler(updateDataProduct));
+[7m  [0m [91m                                                      ~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/product.route.ts[0m:[93m15[0m:[93m58[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m15[0m productRouter.delete("/product/:id", expressAsyncHandler(deleteDataProduct));
+[7m  [0m [91m                                                         ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/product.route.ts[0m:[93m7[0m:[93m51[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m productRouter.get("/product", expressAsyncHandler(getAllProduct));
+[7m [0m [91m                                                  ~~~~~~~~~~~~~[0m
+[96msrc/routes/product.route.ts[0m:[93m9[0m:[93m55[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m9[0m productRouter.get("/product/:id", expressAsyncHandler(getDataProductById));
+[7m [0m [91m                                                      ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/product.route.ts[0m:[93m11[0m:[93m52[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m11[0m productRouter.post("/product", expressAsyncHandler(insertDataProduct));
+[7m  [0m [91m                                                   ~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/product.route.ts[0m:[93m13[0m:[93m55[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m13[0m productRouter.put("/product/:id", expressAsyncHandler(updateDataProduct));
+[7m  [0m [91m                                                      ~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/product.route.ts[0m:[93m15[0m:[93m58[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m15[0m productRouter.delete("/product/:id", expressAsyncHandler(deleteDataProduct));
+[7m  [0m [91m                                                         ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+ [LOGGER] 2024-07-15 03:43:00.931 PM error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/product.route.ts[0m:[93m13[0m:[93m55[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m13[0m productRouter.put("/product/:id", expressAsyncHandler(updateDataProduct));
+[7m  [0m [91m                                                      ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/product.route.ts[0m:[93m13[0m:[93m55[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m13[0m productRouter.put("/product/:id", expressAsyncHandler(updateDataProduct));
+[7m  [0m [91m                                                      ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+ [LOGGER] 2024-07-15 08:44:24.599 PM error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/validations/user.validation.ts[0m:[93m10[0m:[93m104[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ "any.only": string; "any.required": string; }' is not assignable to parameter of type 'string'.
+
+[7m10[0m     confirmPassword: Joi.any().equal(Joi.ref("password")).required().label("Confirm Password").message({
+[7m  [0m [91m                                                                                                       ~[0m
+[7m11[0m       "any.only": "{{#label}} tidak sama dengan password",
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m12[0m       "any.required": "{{#label}} harus diisi",
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m13[0m     }),
+[7m  [0m [91m~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/validations/user.validation.ts[0m:[93m10[0m:[93m104[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ "any.only": string; "any.required": string; }' is not assignable to parameter of type 'string'.
+
+[7m10[0m     confirmPassword: Joi.any().equal(Joi.ref("password")).required().label("Confirm Password").message({
+[7m  [0m [91m                                                                                                       ~[0m
+[7m11[0m       "any.only": "{{#label}} tidak sama dengan password",
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m12[0m       "any.required": "{{#label}} harus diisi",
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m13[0m     }),
+[7m  [0m [91m~~~~~[0m
+
+    at createTSError (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+ [LOGGER] 2024-07-15 08:44:50.502 PM error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/validations/user.validation.ts[0m:[93m10[0m:[93m104[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ any: any; "": any; "{{#label}} tidak sama dengan password": any; "{{#label}} harus diisi": any; }' is not assignable to parameter of type 'string'.
+
+[7m10[0m     confirmPassword: Joi.any().equal(Joi.ref("password")).required().label("Confirm Password").message({
+[7m  [0m [91m                                                                                                       ~[0m
+[7m11[0m       any.only: "{{#label}} tidak sama dengan password",
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m12[0m       any.required: "{{#label}} harus diisi",
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m13[0m     }),
+[7m  [0m [91m~~~~~[0m
+[96msrc/validations/user.validation.ts[0m:[93m11[0m:[93m7[0m - [91merror[0m[90m TS2693: [0m'any' only refers to a type, but is being used as a value here.
+
+[7m11[0m       any.only: "{{#label}} tidak sama dengan password",
+[7m  [0m [91m      ~~~[0m
+[96msrc/validations/user.validation.ts[0m:[93m12[0m:[93m7[0m - [91merror[0m[90m TS2693: [0m'any' only refers to a type, but is being used as a value here.
+
+[7m12[0m       any.required: "{{#label}} harus diisi",
+[7m  [0m [91m      ~~~[0m
+[96msrc/validations/user.validation.ts[0m:[93m11[0m:[93m10[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m11[0m       any.only: "{{#label}} tidak sama dengan password",
+[7m  [0m [91m         ~[0m
+[96msrc/validations/user.validation.ts[0m:[93m11[0m:[93m15[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m11[0m       any.only: "{{#label}} tidak sama dengan password",
+[7m  [0m [91m              ~[0m
+[96msrc/validations/user.validation.ts[0m:[93m11[0m:[93m56[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m11[0m       any.only: "{{#label}} tidak sama dengan password",
+[7m  [0m [91m                                                       ~[0m
+[96msrc/validations/user.validation.ts[0m:[93m12[0m:[93m10[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m12[0m       any.required: "{{#label}} harus diisi",
+[7m  [0m [91m         ~[0m
+[96msrc/validations/user.validation.ts[0m:[93m12[0m:[93m19[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m12[0m       any.required: "{{#label}} harus diisi",
+[7m  [0m [91m                  ~[0m
+[96msrc/validations/user.validation.ts[0m:[93m12[0m:[93m45[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m12[0m       any.required: "{{#label}} harus diisi",
+[7m  [0m [91m                                            ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/validations/user.validation.ts[0m:[93m10[0m:[93m104[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ any: any; "": any; "{{#label}} tidak sama dengan password": any; "{{#label}} harus diisi": any; }' is not assignable to parameter of type 'string'.
+
+[7m10[0m     confirmPassword: Joi.any().equal(Joi.ref("password")).required().label("Confirm Password").message({
+[7m  [0m [91m                                                                                                       ~[0m
+[7m11[0m       any.only: "{{#label}} tidak sama dengan password",
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m12[0m       any.required: "{{#label}} harus diisi",
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m13[0m     }),
+[7m  [0m [91m~~~~~[0m
+[96msrc/validations/user.validation.ts[0m:[93m11[0m:[93m7[0m - [91merror[0m[90m TS2693: [0m'any' only refers to a type, but is being used as a value here.
+
+[7m11[0m       any.only: "{{#label}} tidak sama dengan password",
+[7m  [0m [91m      ~~~[0m
+[96msrc/validations/user.validation.ts[0m:[93m12[0m:[93m7[0m - [91merror[0m[90m TS2693: [0m'any' only refers to a type, but is being used as a value here.
+
+[7m12[0m       any.required: "{{#label}} harus diisi",
+[7m  [0m [91m      ~~~[0m
+[96msrc/validations/user.validation.ts[0m:[93m11[0m:[93m10[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m11[0m       any.only: "{{#label}} tidak sama dengan password",
+[7m  [0m [91m         ~[0m
+[96msrc/validations/user.validation.ts[0m:[93m11[0m:[93m15[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m11[0m       any.only: "{{#label}} tidak sama dengan password",
+[7m  [0m [91m              ~[0m
+[96msrc/validations/user.validation.ts[0m:[93m11[0m:[93m56[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m11[0m       any.only: "{{#label}} tidak sama dengan password",
+[7m  [0m [91m                                                       ~[0m
+[96msrc/validations/user.validation.ts[0m:[93m12[0m:[93m10[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m12[0m       any.required: "{{#label}} harus diisi",
+[7m  [0m [91m         ~[0m
+[96msrc/validations/user.validation.ts[0m:[93m12[0m:[93m19[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m12[0m       any.required: "{{#label}} harus diisi",
+[7m  [0m [91m                  ~[0m
+[96msrc/validations/user.validation.ts[0m:[93m12[0m:[93m45[0m - [91merror[0m[90m TS1005: [0m':' expected.
+
+[7m12[0m       any.required: "{{#label}} harus diisi",
+[7m  [0m [91m                                            ~[0m
+
+    at createTSError (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+ [LOGGER] 2024-07-15 08:51:34.688 PM error : Error pada file src/controllers/user.controller.ts : registerUser - 
+Invalid `prisma.user.create()` invocation in
+C:\laragon\www\latihan_express2\src\services\user.services.ts:6:34
+
+  3 import prisma from "../utils/connection";
+  4 
+  5 export const createUser = async (payload: UserType): Promise<User> => {
+→ 6   const data = await prisma.user.create(
+Unique constraint failed on the constraint: `User_email_key`
+ [LOGGER] 2024-07-15 11:21:27.533 PM error : uncaughtException: Cannot find module 'jsonwebtoken'
+Require stack:
+- C:\laragon\www\latihan_express2\src\utils\jwt.ts
+- C:\laragon\www\latihan_express2\src\controller\user.controller.ts
+- C:\laragon\www\latihan_express2\src\routes\user.route.ts
+- C:\laragon\www\latihan_express2\src\routes\index.ts
+- C:\laragon\www\latihan_express2\src\middleware\index.ts
+- C:\laragon\www\latihan_express2\src\index.ts
+Error: Cannot find module 'jsonwebtoken'
+Require stack:
+- C:\laragon\www\latihan_express2\src\utils\jwt.ts
+- C:\laragon\www\latihan_express2\src\controller\user.controller.ts
+- C:\laragon\www\latihan_express2\src\routes\user.route.ts
+- C:\laragon\www\latihan_express2\src\routes\index.ts
+- C:\laragon\www\latihan_express2\src\middleware\index.ts
+- C:\laragon\www\latihan_express2\src\index.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1048:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (C:\laragon\www\latihan_express2\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:901:27)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (C:\laragon\www\latihan_express2\src\utils\jwt.ts:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
+ [LOGGER] 2024-07-15 11:22:25.345 PM error : uncaughtException: Cannot find module 'jsonwebtoken'
+Require stack:
+- C:\laragon\www\latihan_express2\src\utils\jwt.ts
+- C:\laragon\www\latihan_express2\src\controller\user.controller.ts
+- C:\laragon\www\latihan_express2\src\routes\user.route.ts
+- C:\laragon\www\latihan_express2\src\routes\index.ts
+- C:\laragon\www\latihan_express2\src\middleware\index.ts
+- C:\laragon\www\latihan_express2\src\index.ts
+Error: Cannot find module 'jsonwebtoken'
+Require stack:
+- C:\laragon\www\latihan_express2\src\utils\jwt.ts
+- C:\laragon\www\latihan_express2\src\controller\user.controller.ts
+- C:\laragon\www\latihan_express2\src\routes\user.route.ts
+- C:\laragon\www\latihan_express2\src\routes\index.ts
+- C:\laragon\www\latihan_express2\src\middleware\index.ts
+- C:\laragon\www\latihan_express2\src\index.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1048:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (C:\laragon\www\latihan_express2\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:901:27)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (C:\laragon\www\latihan_express2\src\utils\jwt.ts:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module.m._compile (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\laragon\www\latihan_express2\node_modules\ts-node\src\index.ts:1621:12)
